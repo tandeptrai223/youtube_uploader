@@ -1,0 +1,45 @@
+{
+  "name": "youtube-sheets-uploader",
+  "version": "1.0.0",
+  "description": "Auto upload YouTube videos from Google Sheets",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install && cd ..",
+    "build-all": "npm run build && cd client && npm run build && cd .."
+  },
+  "keywords": [
+    "youtube",
+    "uploader",
+    "google-sheets",
+    "automation"
+  ],
+  "author": "tandeptrai223",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "better-sqlite3": "^9.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "google-auth-library": "^9.0.0",
+    "googleapis": "^118.0.0",
+    "node-cron": "^3.0.2",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "uuid": "^9.0.1",
+    "youtube-videos-uploader": "^2.0.28"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/express-session": "^1.17.7",
+    "@types/node": "^20.8.0",
+    "@types/uuid": "^9.0.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
